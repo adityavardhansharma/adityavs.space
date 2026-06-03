@@ -59,7 +59,7 @@ export default function HomePage() {
         viewAllHref="/projects"
         viewAllText="all projects"
       />
-      <SectionList title="education" items={educationItems} />
+      <SectionList id="education" title="education" items={educationItems} />
       <BlogSection />
       <LinksSection />
     </>
