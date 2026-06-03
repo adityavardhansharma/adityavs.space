@@ -31,7 +31,7 @@ export function Navbar() {
           router.push("/projects")
           break
         case "e":
-          router.push("/#education")
+          router.push("/education")
           break
         case "w":
           router.push("/work")
@@ -70,7 +70,7 @@ export function Navbar() {
           <span className="hidden sm:inline">[p] </span>projects
         </Link>
         <Link
-          href="/#education"
+          href="/education"
           className="hover:text-accent transition-colors duration-200 py-2 px-1.5 sm:px-0 sm:py-0"
         >
           <span className="hidden sm:inline">[e] </span>education

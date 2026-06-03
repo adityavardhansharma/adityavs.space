@@ -10,7 +10,6 @@ export type Item = {
 }
 
 type SectionListProps = {
-  id?: string
   title: string
   items: Item[]
   viewAllHref?: string
@@ -20,7 +19,6 @@ type SectionListProps = {
 }
 
 export function SectionList({
-  id,
   title,
   items,
   viewAllHref,
@@ -30,7 +28,6 @@ export function SectionList({
 }: SectionListProps) {
   return (
     <section
-      id={id}
       className={`mb-12 animate-fade-in-up ${
         showSectionBorder ? "pt-10 border-t border-neutral-800" : ""
       }`}
