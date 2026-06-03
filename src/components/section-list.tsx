@@ -74,7 +74,10 @@ export function SectionList({
 
           if (!item.href) {
             return (
-              <div key={item.title} className="block rounded-lg p-4 -mx-4">
+              <div
+                key={item.title}
+                className="group block rounded-lg p-4 -mx-4 hover:bg-neutral-900/50"
+              >
                 {content}
               </div>
             )
