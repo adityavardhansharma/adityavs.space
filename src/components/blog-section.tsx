@@ -11,6 +11,10 @@ const posts = getPublishedPosts()
   .slice(0, 4)
 
 export function BlogSection() {
+  if (posts.length === 0) {
+    return null
+  }
+
   return (
     <section className="mb-12 pt-10 border-t border-neutral-800 animate-fade-in-up">
       <div className="flex items-baseline justify-between mb-6">

@@ -12,15 +12,17 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.nexxel.dev"),
   title: {
-    default: "Shoubhit Dash",
-    template: "%s | Shoubhit Dash",
+    default: "Aditya Vardhan Sharma",
+    template: "%s | Aditya Vardhan Sharma",
   },
-  description: "Developer, cardist and maker of things.",
+  description:
+    "Master's student in Computer Science at DCU, building with AI and AI agents.",
   openGraph: {
-    title: "Shoubhit Dash",
-    description: "Developer, cardist and maker of things.",
+    title: "Aditya Vardhan Sharma",
+    description:
+      "Master's student in Computer Science at DCU, building with AI and AI agents.",
     url: "https://www.nexxel.dev",
-    siteName: "Shoubhit Dash",
+    siteName: "Aditya Vardhan Sharma",
     locale: "en_US",
     type: "website",
     images: ["https://www.nexxel.dev/og/home"],
@@ -33,9 +35,8 @@ export const metadata: Metadata = {
     "max-snippet": -1,
   },
   twitter: {
-    title: "Shoubhit Dash",
+    title: "Aditya Vardhan Sharma",
     card: "summary_large_image",
-    creator: "@nexxeln",
   },
 }
 
