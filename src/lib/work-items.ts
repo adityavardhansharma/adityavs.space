@@ -2,48 +2,24 @@ import type { Item } from "@/components/section-list"
 
 export const workItems: Item[] = [
   {
-    title: "opencode",
-    role: "software engineer",
-    period: "feb 2026 - present",
-    description: "building the future of coding agents",
-    href: "https://opencode.ai",
-  },
-  {
-    title: "supermemory",
-    role: "founding engineer",
-    period: "nov 2025 - feb 2026",
-    description: "built the best memory engine for ai agents",
-    href: "https://supermemory.ai",
-  },
-  {
-    title: "mocha",
-    role: "co-founder and cto",
-    period: "jul 2025 - oct 2025",
-    description: "built an ai native email client designed for speed and ease of use",
-    href: "https://mocha.email",
-  },
-  {
-    title: "ENS labs",
-    role: "software engineer",
-    period: "feb 2025 - jul 2025",
+    title: "Drish Infotech",
+    role: "Applied AI Intern",
+    period: "Jan 2025 - Jun 2025",
     description:
-      "helped migrate ensjs to namechain and optimized ci for the manager app",
-    href: "https://ens.domains",
+      "Built domain-specific NLP chatbots, RAG pipelines, and LLM-powered AI features for web apps. Created predictive maintenance models and computer vision solutions for pose detection and image analytics.",
   },
   {
-    title: "leapflow",
-    role: "co-founder and cto",
-    period: "may 2024 - jun 2025",
+    title: "Cloud Counselage",
+    role: "Data Science Intern",
+    period: "Jun 2024 - Aug 2024",
     description:
-      "headed engineering to develop ai agents that automate repetitive workflows in existing software",
-    href: "https://leapflow.tech",
+      "Worked with internal company datasets to train and evaluate machine learning models. Supported data preparation, model experimentation, and insights for business-focused use cases.",
   },
   {
-    title: "dimension",
-    role: "full-stack engineer",
-    period: "nov 2023 - jan 2024",
+    title: "IIT Jammu",
+    role: "Research Intern",
+    period: "Jun 2023 - Aug 2023",
     description:
-      "contributed to a large-scale t3 stack app. worked on real-time presence and chat features",
-    href: "https://dimension.dev",
+      "Built a web app for audio recording, speech transcription, and multi-language translation using Hugging Face models. Trained lightweight image detection models for Raspberry Pi deployment on drone-attached edge hardware.",
   },
 ]

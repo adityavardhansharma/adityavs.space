@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react"
 
 export type Item = {
   title: string
-  href: string
+  href?: string
   role: string
   period?: string
   description: string
@@ -27,7 +27,11 @@ export function SectionList({
   showSectionBorder = true,
 }: SectionListProps) {
   return (
-    <section className={`mb-12 animate-fade-in-up ${showSectionBorder ? "pt-10 border-t border-neutral-800" : ""}`}>
+    <section
+      className={`mb-12 animate-fade-in-up ${
+        showSectionBorder ? "pt-10 border-t border-neutral-800" : ""
+      }`}
+    >
       {showTitle && (
         <div className="flex items-baseline justify-between mb-6">
           <h2 className="text-2xl font-semibold flex items-center text-white">
@@ -45,25 +49,48 @@ export function SectionList({
         </div>
       )}
       <div className="space-y-2">
-        {items.map((item) => (
-          <Link key={item.title} href={item.href} target="_blank" className="group block rounded-lg p-4 -mx-4 hover:bg-neutral-900/50">
+        {items.map((item) => {
+          const content = (
             <div className="flex items-start justify-between gap-4">
               <div className="min-w-0">
-                <h3 className="text-xl font-semibold text-white group-hover:text-accent transition-colors duration-200">
+                <h3 className="text-xl font-semibold text-white transition-colors duration-200 group-hover:text-accent">
                   {item.title}
                 </h3>
-                <p className="text-sm text-gray-500 mt-1">
+                <p className="mt-1 text-sm text-gray-500">
                   {item.role}
                   {item.period && (
                     <span className="text-gray-600"> · {item.period}</span>
                   )}
                 </p>
-                <p className="text-gray-300 mt-2 text-pretty">{item.description}</p>
+                <p className="mt-2 text-pretty text-gray-300">
+                  {item.description}
+                </p>
               </div>
-              <ArrowUpRight className="w-4 h-4 mt-1.5 text-gray-600 group-hover:text-accent transition-colors shrink-0" />
+              {item.href && (
+                <ArrowUpRight className="mt-1.5 h-4 w-4 shrink-0 text-gray-600 transition-colors group-hover:text-accent" />
+              )}
             </div>
-          </Link>
-        ))}
+          )
+
+          if (!item.href) {
+            return (
+              <div key={item.title} className="block rounded-lg p-4 -mx-4">
+                {content}
+              </div>
+            )
+          }
+
+          return (
+            <Link
+              key={item.title}
+              href={item.href}
+              target="_blank"
+              className="group block rounded-lg p-4 -mx-4 hover:bg-neutral-900/50"
+            >
+              {content}
+            </Link>
+          )
+        })}
       </div>
       {viewAllHref && !showTitle && (
         <Link
