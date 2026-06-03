@@ -1,11 +1,13 @@
 import Link from "next/link"
 
 const links = [
-  { title: "email", href: "mailto:hey@nexxel.dev" },
-  { title: "x.com", href: "https://x.com/nexxeln" },
-  { title: "github", href: "https://github.com/nexxeln" },
-  { title: "linkedin", href: "https://www.linkedin.com/in/shoubhit-dash" },
-  { title: "book a call", href: "https://cal.com/nexxel" },
+  { title: "email", href: "mailto:adityavardhansharma74@gmail.com" },
+  { title: "github", href: "https://github.com/adityavardhansharma" },
+  {
+    title: "linkedin",
+    href: "https://www.linkedin.com/in/adityavardhansharma18/",
+  },
+  { title: "book a call", href: "https://cal.eu/adityavardhan/30min" },
 ]
 
 export function LinksSection() {
