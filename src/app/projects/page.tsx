@@ -1,8 +1,7 @@
 import { ScrambleText } from "@/components/scramble-text"
-import { ProjectCard, type ProjectCardProps } from "@/components/project-card"
+import { ProjectCard } from "@/components/project-card"
+import { projects } from "@/lib/project-items"
 import { Metadata } from "next"
-
-const projects: ProjectCardProps[] = []
 
 export default function ProjectsPage() {
   return (
