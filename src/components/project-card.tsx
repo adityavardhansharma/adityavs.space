@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 
-type ProjectCardProps = {
+export type ProjectCardProps = {
   title: string
   description: string
   role: string
