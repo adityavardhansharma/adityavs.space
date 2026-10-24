@@ -4,7 +4,7 @@ export const projects: ProjectCardProps[] = [
   {
     title: "EchoFlow",
     description:
-      "A polished Android AI chat client with streaming responses, reasoning traces, and rich markdown rendering.",
+      "An Android AI workspace that runs on-device models offline, connects to cloud and local network models, and adds projects, artifacts, on-device OCR, and web search.",
     platform: "Android app",
     platforms: ["Android"],
     technologies: [
@@ -12,13 +12,45 @@ export const projects: ProjectCardProps[] = [
       "Jetpack Compose",
       "Material 3",
       "OpenRouter",
+      "LiteRT-LM",
+      "llama.cpp",
+      "ML Kit",
       "Room",
       "DataStore",
       "Retrofit",
       "Moshi",
     ],
     githubHref: "https://github.com/adityavardhansharma/EchoFlow",
-    websiteHref: "https://echoflow.adityavs.tech/",
+    websiteHref: "https://echoflow.adityavs.space/",
+  },
+  {
+    title: "EchoFiles",
+    description:
+      "A native Linux file manager built for fast folders, quick search, dual-pane file work, and a command palette.",
+    platform: "Linux app",
+    platforms: ["Desktop"],
+    technologies: ["Rust", "iced", "wgpu", "Vulkan", "rayon", "zbus"],
+    githubHref: "https://github.com/adityavardhansharma/EchoFiles_Linux",
+    websiteHref: "https://echofiles.adityavs.space/",
+  },
+  {
+    title: "Ledgerline",
+    description:
+      "Management accounts and three-statement forecasts for small businesses, synced from Xero or CSV and reconciled to the cent.",
+    platform: "Website",
+    platforms: ["Website"],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Convex",
+      "Python",
+      "FastAPI",
+      "Xero API",
+      "Clerk",
+      "OpenRouter",
+    ],
+    githubHref: "https://github.com/adityavardhansharma/Ledgerline",
+    websiteHref: "https://ledger.adityavs.space/",
   },
   {
     title: "MailMe",
@@ -45,7 +77,7 @@ export const projects: ProjectCardProps[] = [
     platforms: ["Chrome Extension"],
     technologies: ["Astro", "JavaScript", "pdf-lib", "JSZip", "pdfjs-dist"],
     githubHref: "https://github.com/adityavardhansharma/FeedDoc",
-    websiteHref: "https://feeddoc.adityavs.tech/",
+    websiteHref: "https://feeddoc.adityavs.space/",
   },
   {
     title: "Chef It Up",
