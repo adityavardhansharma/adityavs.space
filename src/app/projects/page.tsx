@@ -12,7 +12,7 @@ export default function ProjectsPage() {
       </h1>
 
       <p className="text-gray-400 mb-6 leading-relaxed">
-        projects i&apos;ve built and shipped will live here soon.
+        projects i&apos;ve built and shipped live here.
       </p>
 
       {projects.length > 0 ? (
