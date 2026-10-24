@@ -4,7 +4,7 @@ export const projects: ProjectCardProps[] = [
   {
     title: "EchoFlow",
     description:
-      "A polished Android AI chat client with streaming responses, reasoning traces, and rich markdown rendering.",
+      "An Android AI workspace that runs on-device models offline, connects to cloud and local network models, and adds projects, artifacts, on-device OCR, and web search.",
     platform: "Android app",
     platforms: ["Android"],
     technologies: [
@@ -12,6 +12,9 @@ export const projects: ProjectCardProps[] = [
       "Jetpack Compose",
       "Material 3",
       "OpenRouter",
+      "LiteRT-LM",
+      "llama.cpp",
+      "ML Kit",
       "Room",
       "DataStore",
       "Retrofit",
