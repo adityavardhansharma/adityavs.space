@@ -53,6 +53,39 @@ export const projects: ProjectCardProps[] = [
     websiteHref: "https://ledger.adityavs.space/",
   },
   {
+    title: "TypoPilot",
+    description:
+      "Research project that fine-tunes ByT5-small to fix heavily mistyped English and Hinglish text, trained on pairs from a keyboard-aware noise generator. Halved character error rate and cut overcorrection from 44.5% to 9.3% against SymSpell.",
+    platform: "Machine learning research",
+    platforms: ["ML"],
+    technologies: [
+      "Python",
+      "PyTorch",
+      "Hugging Face Transformers",
+      "ByT5",
+      "SymSpell",
+    ],
+    githubHref: "https://github.com/adityavardhansharma/TypoPilot",
+  },
+  {
+    title: "Cricket ML Practicum",
+    description:
+      "MSc practicum forecasting next-over runs and ball-by-ball wicket risk in T20 cricket from 8,903 Cricsheet matches, with leakage-safe features, SHAP explanations, and a live prediction dashboard.",
+    platform: "Machine learning project",
+    platforms: ["ML", "Website"],
+    technologies: [
+      "Python",
+      "Pandas",
+      "LightGBM",
+      "SHAP",
+      "FastAPI",
+      "Astro",
+      "TypeScript",
+    ],
+    githubHref:
+      "https://github.com/adityavardhansharma/Cricket-Practicum---T20-Analytics---Prediction",
+  },
+  {
     title: "MailMe",
     description:
       "A desktop email co-pilot that turns unread Gmail into summaries, ready-to-edit replies, and follow-up workflows.",
@@ -188,5 +221,26 @@ export const projects: ProjectCardProps[] = [
       "Hugging Face Transformers",
     ],
     githubHref: "https://github.com/adityavardhansharma/freescribe",
+  },
+]
+
+export const llmTrainingItems: ProjectCardProps[] = [
+  {
+    title: "EchoPulse",
+    description:
+      "A 1.7B model fine-tuned from Liquid AI's LFM3-1.7B for EchoFlow, my private on-device AI assistant. It knows when to emit a search query, builds single-file HTML app artifacts, and handles a 16K-token context. Published with Q4 and Q8 GGUF builds for llama.cpp.",
+    platform: "Fine-tuned language model",
+    platforms: ["ML", "Android"],
+    technologies: ["LFM3-1.7B", "Transformers", "GGUF", "llama.cpp", "SFT"],
+    huggingFaceHref: "https://huggingface.co/adityavardhansharma/EchoPulse-1.7B",
+  },
+  {
+    title: "EchoSwift",
+    description:
+      "A smaller 700M model fine-tuned from Liquid AI's LFM2-700M on the same EchoFlow training corpus, built to run fast on phones. Quantised to INT4 and INT8 LiteRT-LM packages with 4K and 8K context.",
+    platform: "Fine-tuned language model",
+    platforms: ["ML", "Android"],
+    technologies: ["LFM2-700M", "Transformers", "LiteRT-LM", "INT4/INT8", "SFT"],
+    huggingFaceHref: "https://huggingface.co/adityavardhansharma/EchoSwift-700M",
   },
 ]
