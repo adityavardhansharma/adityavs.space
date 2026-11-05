@@ -26,8 +26,9 @@ export type ProjectCardProps = {
   platform: string
   platforms: ProjectPlatform[]
   technologies: string[]
-  githubHref: string
+  githubHref?: string
   websiteHref?: string
+  huggingFaceHref?: string
 }
 
 const platformIcons: Record<
@@ -51,6 +52,7 @@ export function ProjectCard({
   technologies,
   githubHref,
   websiteHref,
+  huggingFaceHref,
 }: ProjectCardProps) {
   return (
     <article className="group block rounded-lg p-4 -mx-4 hover:bg-neutral-900/50">
@@ -93,14 +95,28 @@ export function ProjectCard({
         </div>
 
         <div className="flex shrink-0 gap-2">
-          <Link
-            href={githubHref}
-            target="_blank"
-            aria-label={`${title} GitHub repository`}
-            className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-neutral-800 text-gray-500 transition-colors hover:border-accent hover:text-accent"
-          >
-            <Github className="h-4 w-4" />
-          </Link>
+          {githubHref && (
+            <Link
+              href={githubHref}
+              target="_blank"
+              aria-label={`${title} GitHub repository`}
+              className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-neutral-800 text-gray-500 transition-colors hover:border-accent hover:text-accent"
+            >
+              <Github className="h-4 w-4" />
+            </Link>
+          )}
+          {huggingFaceHref && (
+            <Link
+              href={huggingFaceHref}
+              target="_blank"
+              aria-label={`${title} on Hugging Face`}
+              className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-neutral-800 text-gray-500 transition-colors hover:border-accent hover:text-accent"
+            >
+              <span aria-hidden="true" className="text-sm leading-none">
+                🤗
+              </span>
+            </Link>
+          )}
           {websiteHref && (
             <Link
               href={websiteHref}

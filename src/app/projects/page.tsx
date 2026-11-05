@@ -1,5 +1,6 @@
 import { ScrambleText } from "@/components/scramble-text"
 import { ProjectCard } from "@/components/project-card"
+import { LlmTrainingSection } from "@/components/llm-training-section"
 import { projects } from "@/lib/project-items"
 import { Metadata } from "next"
 
@@ -26,6 +27,10 @@ export default function ProjectsPage() {
           No projects listed yet.
         </p>
       )}
+
+      <div className="mt-12">
+        <LlmTrainingSection />
+      </div>
     </main>
   )
 }

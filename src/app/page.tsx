@@ -2,6 +2,7 @@ import { Header } from "@/components/header"
 import { Item, SectionList } from "@/components/section-list"
 import { BlogSection } from "@/components/blog-section"
 import { LinksSection } from "@/components/links-section"
+import { LlmTrainingSection } from "@/components/llm-training-section"
 import { ProjectCard } from "@/components/project-card"
 import { educationItems } from "@/lib/education-items"
 import { projects } from "@/lib/project-items"
@@ -44,6 +45,7 @@ export default function HomePage() {
           </div>
         </section>
       )}
+      <LlmTrainingSection />
       <SectionList
         title="education"
         items={educationItems}

@@ -7,6 +7,7 @@ const links = [
     title: "linkedin",
     href: "https://www.linkedin.com/in/adityavardhansharma18/",
   },
+  { title: "hugging face", href: "https://huggingface.co/adityavardhansharma" },
   { title: "book a call", href: "https://cal.eu/adityavardhan/30min" },
 ]
 
